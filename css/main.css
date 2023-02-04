@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
 body {
   background-image: url("../images/img.jpg");
   background-repeat: no-repeat;
@@ -13,14 +23,30 @@ body {
 
 .projects-item {
   text-align: center;
-  min-height: 400px;
+  min-height: 800px;
   width: calc(20% - 50px);
 
+}
+.projects-item-cont {
+  margin-bottom: 30px;
+  padding: 1px;
+  border: 2px solid teal;
+  background-color: rgb(194, 147, 81);
+
+}
+
+.projects-item-title {
+  font-family: "Roboto-Bold";
+  text-align: center;
+  max-height: 1px;
+  line-height: 1px;
+  display:block;
+  color: Black;
+  font-size: 40px;
 }
 
 .projects-link {
   display: block;
-  height: 100%;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -28,14 +54,8 @@ body {
 
 .img-cali {
   display: block;
-  /* width: 100%; */
+  width: 100%;
 }
 
-.projects-link-title {
-  margin-bottom: 30px;
-  font-weight: bold;
-  color: Black;
-  font-size: 40px;
-  /* color: teal; */
-}
+
 
