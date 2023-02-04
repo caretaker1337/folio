@@ -25,14 +25,12 @@ body {
   text-align: center;
   min-height: 800px;
   width: calc(20% - 50px);
-
 }
 .projects-item-cont {
   margin-bottom: 30px;
   padding: 1px;
   border: 2px solid teal;
   background-color: rgb(194, 147, 81);
-
 }
 
 .projects-item-title {
@@ -40,9 +38,10 @@ body {
   text-align: center;
   max-height: 1px;
   line-height: 1px;
-  display:block;
+  display: block;
   color: Black;
   font-size: 40px;
+  cursor: default;
 }
 
 .projects-link {
@@ -56,6 +55,3 @@ body {
   display: block;
   width: 100%;
 }
-
-
-
