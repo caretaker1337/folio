@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url("../images/img.jpg");
+  background-image: url("../images/3.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -26,29 +26,50 @@ body {
   min-height: 800px;
   width: calc(20% - 50px);
 }
+
 .projects-item-cont {
-  margin-bottom: 30px;
-  padding: 1px;
-  border: 2px solid teal;
-  background-color: rgb(194, 147, 81);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+
 }
 
 .projects-item-title {
   font-family: "Roboto-Bold";
   text-align: center;
-  max-height: 1px;
-  line-height: 1px;
+  height: 80px;
+  line-height: 80px;
   display: block;
   color: Black;
   font-size: 40px;
-  cursor: default;
+  border: 2px solid black;
+  background-color: rgb(244, 142, 33);
+
+}
+
+.projects-item-button {
+  height: 40px;
+  border-radius: 10px;
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(244, 142, 33);
+
+}
+
+.projects-item-button:hover {
+  background-color: black;
 }
 
 .projects-link {
   display: block;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
+  color: black;
+}
+
+.projects-link:hover {
+  color:rgb(244, 142, 33);
 }
 
 .img-cali {
