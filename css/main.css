@@ -32,7 +32,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   gap: 20px;
-
 }
 
 .projects-item-title {
@@ -45,7 +44,6 @@ body {
   font-size: 40px;
   border: 2px solid black;
   background-color: rgb(244, 142, 33);
-
 }
 
 .projects-item-button {
@@ -55,7 +53,11 @@ body {
   font-size: 20px;
   margin-top: 20px;
   color: rgb(244, 142, 33);
+}
 
+.projects-item-image {
+  height: 200px;
+  object-fit: cover;
 }
 
 .projects-item-button:hover {
@@ -69,10 +71,5 @@ body {
 }
 
 .projects-link:hover {
-  color:rgb(244, 142, 33);
-}
-
-.img-cali {
-  display: block;
-  width: 100%;
+  color: rgb(244, 142, 33);
 }
