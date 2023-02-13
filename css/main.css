@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Roboto-Bold";
+  font-family: "RobotoBold";
   src: url("../fonts/Roboto-Bold.ttf");
 }
 
@@ -22,8 +22,7 @@ body {
 }
 
 .projects-item {
-  text-align: center;
-  min-height: 800px;
+  position: relative;
   width: calc(20% - 50px);
 }
 
@@ -31,28 +30,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 20px;
 }
 
 .projects-item-title {
-  font-family: "Roboto-Bold";
-  text-align: center;
-  height: 80px;
-  line-height: 80px;
+  font-family: "Roboto";
+  line-height: 1;
   display: block;
-  color: Black;
-  font-size: 40px;
-  border: 2px solid black;
-  background-color: rgb(244, 142, 33);
-}
-
-.projects-item-button {
-  height: 40px;
-  border-radius: 10px;
-  font-family: "Roboto-Bold";
+  color: black;
   font-size: 20px;
-  margin-top: 20px;
-  color: rgb(244, 142, 33);
+  margin-bottom: 8px;
+  text-shadow: 0 0 2px black;
 }
 
 .projects-item-image {
@@ -68,6 +55,11 @@ body {
   display: block;
   text-decoration: none;
   color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .projects-link:hover {
