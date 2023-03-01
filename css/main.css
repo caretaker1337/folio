@@ -1,65 +1,90 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: "Syncopate";
+  font-weight: 700;
+  src: url("../fonts/Syncopate-Bold.ttf");
 }
 
-@font-face {
-  font-family: "RobotoBold";
-  src: url("../fonts/Roboto-Bold.ttf");
+html,
+body {
+  height: 100%;
 }
 
 body {
   background-image: url("../images/3.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
+  font-family: "Syncopate", sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 .projects-list {
   list-style: none;
   display: flex;
-  gap: 50px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .projects-item {
-  position: relative;
-  width: calc(20% - 50px);
+  flex: 0 1 170px;
+  height: 170px;
+  width: 170px;
 }
 
 .projects-item-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .projects-item-title {
-  font-family: "Roboto";
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  height: 100%;
+  justify-content: center;
   line-height: 1;
-  display: block;
-  color: black;
-  font-size: 20px;
-  margin-bottom: 8px;
-  text-shadow: 0 0 2px black;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  transition: top 0.6s ease;
+  width: 100%;
+  z-index: 2;
+}
+
+.projects-item-cont:hover > .projects-item-title {
+  top: 0;
+}
+
+.projects-item:nth-of-type(even) > .projects-item-cont > .projects-item-title {
+  background-color: #92db8f;
+}
+
+.projects-item:nth-of-type(odd) > .projects-item-cont > .projects-item-title {
+  background-color: #ff9764;
 }
 
 .projects-item-image {
-  height: 200px;
+  display: block;
+  height: 100%;
   object-fit: cover;
-}
-
-.projects-item-button:hover {
-  background-color: black;
+  width: 100%;
 }
 
 .projects-link {
-  display: block;
-  text-decoration: none;
-  color: black;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
   bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  z-index: 10;
 }
 
 .projects-link:hover {
