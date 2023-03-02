@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--color-green) url(../images/main_bg.jpg) center center/cover
+    no-repeat;
+  font-family: "Syncopate", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+a:focus {
+  outline: none;
+}
