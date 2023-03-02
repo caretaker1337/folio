@@ -85,16 +85,21 @@
 }
 
 .footer {
-  padding-inline: 30px;
+  padding: 30px;
 }
 
 .footer-list {
+  column-gap: 30px;
   display: flex;
+  height: 30px;
   justify-content: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-item {
+  height: 100%;
   width: 30px;
 }
 
@@ -103,8 +108,17 @@
   height: 100%;
 }
 
+.footer-link:hover {
+  opacity: 0.6;
+}
+
 .footer-icon {
   align-items: center;
   display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.footer-icon > img {
   height: 100%;
 }
