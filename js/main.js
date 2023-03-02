@@ -44,8 +44,6 @@ window.onload = () => {
     })
     .join("");
 
-  console.log(items);
-
   if (items && !!items.length) {
     list.innerHTML = items;
     new MiniMasonry({
