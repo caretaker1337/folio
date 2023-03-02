@@ -1,6 +1,6 @@
 window.onload = () => {
   const projects = window["projects"];
-  const list = document.getElementById("root");
+  const list = document.getElementById("projects-holder");
 
   const items = projects
     .map(({ name, techs, url }) => {
